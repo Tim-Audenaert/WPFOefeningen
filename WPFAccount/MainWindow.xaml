@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFAccount.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAccount"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label  Content="Voornaam" HorizontalAlignment="Center"></Label>
+            <TextBox Margin="0 5 5 5" Width="200" x:Name="TxtFirstName"></TextBox>
+            <Label Content="Achternaam" HorizontalAlignment="Center"></Label>
+            <TextBox Margin="0 5 5 5" Width="200" x:Name="TxtLastName"></TextBox>
+            <Label Content="Leeftijd" HorizontalAlignment="Center"></Label>
+            <TextBox Margin="0 5 5 5" Width="200" x:Name="TxtAge"></TextBox>
+            <Label Content="Adres" HorizontalAlignment="Center"></Label>
+            <TextBox Margin="0 5 5 5" Width="200" x:Name="TxtAddress"></TextBox>
+            <Label Content="Geslacht" HorizontalAlignment="Center"></Label>
+            <WrapPanel HorizontalAlignment="Center">
+                <RadioButton Content="Man" x:Name ="RbMan"></RadioButton>
+                <RadioButton Content="Vrouw" x:Name="RbVrouw"></RadioButton>
+            </WrapPanel>
+
+            <Button Content="Verzenden" Width="200" Height="100" Margin= "0 20 0 0" FontSize="30" Click="ShowInfo"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
